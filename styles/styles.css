@@ -1,0 +1,259 @@
+@import url(/styles/Reset.css);
+
+@font-face {
+  font-family: Vazir;
+  src: url("/fonts/vazir.eot");
+  src: url("/fonts/vazir.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/vazir.woff2") format("woff2"),
+    url("/fonts/vazir.woff") format("woff"), url("/fonts/") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+}
+
+input , body , button {
+    font-family: Vazir;
+}
+
+body {
+  direction: rtl;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+
+/* header */
+
+
+#header {
+  background: linear-gradient(
+    360deg,
+    rgb(208, 246, 255, 0) 0%,
+    rgb(0, 153, 255) 100%
+  );
+  width: 100%;
+  height: 700px;
+  margin: auto;
+}
+
+#header .logo img{
+    width: 100px;
+}
+
+#header .logo{
+    float: right;
+    padding-top: 10px;
+}
+
+
+/* Navigation */
+
+
+#nav {
+    float: left;
+    padding-top: 50px;
+    z-index: 999;
+}
+
+#nav ul li{
+    display: inline-block;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 5px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    z-index: 999;
+}
+
+#nav ul li a:hover{
+    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transition: 0.25s;
+    z-index: 999;
+}
+
+#nav svg{
+    font-size: 20px;
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+
+
+#subscribe{
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+#subscribe .title {
+    font-size: 65px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#subscribe .subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 40px 0px;
+}
+
+
+.form .email{
+    width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form .sub-btn{
+    border: none;
+    padding: 10px 35px;
+    color: #fff;
+    background-color: #212326;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
+    transition: 0.4s;
+}
+
+.form .sub-btn svg{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 8px;
+    vertical-align: -6px;
+}
+
+.form .sub-btn:hover{
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.781) ;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.projimg{
+    width: 600px;
+    position: relative;
+    bottom: 10px;
+}
+
+#whyus{
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+#whyus .item{
+    width: 30%;
+    height: 200px;
+    display: inline-block;
+    /* background-color: #fff; */
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 20px;    
+    text-align: right;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+
+    
+}
+
+#whyus .item:hover{
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.4;
+}
+
+
+#whyus .logo{
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+#whyus .title{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#whyus .desc{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px 0px;
+}
+
+
+#customers  {
+    width: 100%;
+    height: 300px;
+    background-image: url(../imgs/ttt.png);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#customers h2   {
+    font-size: 40px;
+    padding: 15px 0px;
+
+}
+
+#customers h2:before {
+    content: ".: ";
+}
+
+#customers h2:after {
+    content: " :.";
+}
+
+
+#customers ul img   {
+    width: 200px;
+    margin: 0px 40px;
+    transition: 0.4s;
+}
+
+
+#customers ul img:hover  {
+    opacity: 80%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#footer {
+    text-align: center;
+    background-color: skyblue;
+}
+
+#footer .socials li   {
+    display: inline-block;
+}
+
+#footer .socials svg    {
+    font-size: 40px;
+    padding: 15px 40px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#footer .socials svg:hover  {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+#footer .copyright  {
+    background-color: rgb(0, 24, 41);
+    padding: 10px 0px;
+    color: #fff;
+}
